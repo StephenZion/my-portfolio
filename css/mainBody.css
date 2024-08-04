@@ -1,0 +1,106 @@
+body {
+    --bg-color: #171717;
+    --text-color: #CFCFCF;
+    background-color: var(--bg-color) !important;
+    color: var(--text-color);
+    transition: background-color 1s, color 1s;
+}
+
+.textContent h2, .textContent p, .textContent h4{
+    color: var(--text-color);
+}
+
+.contacts h2, .contacts a{
+    color: var(--text-color);
+}
+
+.socMed a {
+    color: var(--text-color);
+}
+
+#textHead h1 {
+    color: var(--text-color);
+}
+
+.firstContent{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+#textHead{
+    display: inline-block;
+    text-wrap: nowrap;
+    animation: flow 7s linear infinite;
+}
+@keyframes flow{
+    from{transform: translateX(100%);}
+    to {transform: translateX(-150%);}
+}
+
+.textContent p{
+    font-size: large;
+}
+
+/* .textContent h2, .textContent p, .textContent h4{
+    color: #CFCFCF;
+} */
+
+.socMed a{
+    text-decoration: none;
+    font-size:x-large;
+    margin: 3px;
+}
+
+.socMed a :hover{
+    color: rgb(8, 129, 159);
+}
+
+.divider{
+    border: 1px solid rgb(134, 133, 133);
+}
+
+.skills{
+    background-color: #2E2E2E;
+    width: 15%;
+    border-radius: 5%;
+}
+
+.skills img{
+    height: 100%;
+    border-radius: 5%;
+}
+
+.description{
+    background-color: #454545;
+    color: #CFCFCF;
+}
+
+#checkbox-input {
+    display: none;
+}
+
+.switch {
+    width: fit-content;
+    padding: 2px;
+    background-color: rgb(46, 46, 46);
+    border-radius: 50px;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    transition: all 0.7s;
+}
+
+#checkbox-input:checked + .switch {
+    background-color: rgb(161, 91, 0);
+    box-shadow: 0px 0px 100px rgb(255, 196, 0);
+}
+
+.contacts a{
+    display: block;
+    text-decoration: none;
+    font-size: large;
+}
+
+#phone {
+    pointer-events: none;
+}
