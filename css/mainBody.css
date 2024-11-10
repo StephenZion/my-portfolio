@@ -6,7 +6,7 @@ body {
     transition: background-color 1s, color 1s;
 }
 
-.textContent h2, .textContent p, .textContent h4{
+.textContent h2, .textContent p, .textContent h4, .wrapper p{
     color: var(--text-color);
 }
 
@@ -27,6 +27,33 @@ body {
     overflow: hidden;
     text-align: center;
 }
+
+
+.text {
+    font-size: 1em;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-left: 5px;
+    text-transform: uppercase;
+    border-right: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.5s steps(8)infinite alternate, 
+        cursor .4s step-end infinite ;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 3%; }
+}
+
+
 #textHead{
     display: inline-block;
     text-wrap: nowrap;
